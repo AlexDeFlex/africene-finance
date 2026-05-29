@@ -49,7 +49,7 @@ export default function AfriCeneFinance() {
               global markets.
             </p>
 
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-col sm:flex-row gap-4">
               <button className="px-8 py-4 rounded-2xl bg-white text-black font-medium hover:scale-105 transition">
                 Explore The Firm
               </button>
@@ -63,7 +63,7 @@ export default function AfriCeneFinance() {
           <div className="relative flex justify-center">
             <div className="absolute inset-0 bg-blue-500/10 blur-3xl rounded-full" />
 
-            <div className="relative backdrop-blur-2xl bg-white/5 border border-white/10 rounded-[2rem] p-8 shadow-2xl max-w-lg w-full">
+            <div className="relative overflow-hidden backdrop-blur-2xl bg-white/5 border border-white/10 rounded-[2rem] p-8 shadow-2xl max-w-lg w-full">
               <img
                 src="/afrifin.png"
                 alt="AfriCene Finance"
@@ -163,12 +163,13 @@ export default function AfriCeneFinance() {
             {[
               ['AfriCene Finance', 'HF | IB | PE'],
               ['AfriCene Wire', 'Journalism & Media'],
-              ['AfriCene Systems', 'Project Management'],
+              ['AfriCene Projects', 'Project Management'],
               ['AfriCene Pharmaceuticals', 'Drug Development'],
               ['AfriCene MedTech', 'Health Innovation'],
-              ['AfriCene Technologies', 'AI & Electronics'],
-              ['AfriCene OHS', 'Toxicology & Ergonomics'],
+              ['AfriCene Technologies', 'Electronics'],
+              ['AfriCene Toxicology', 'Chemical Treatment'],
               ['AfriCene Consultants', 'Advisory Services'],
+              ['AfriCene Legal', 'Legal & Compliance'],
             ].map((item) => (
               <div
                 key={item[0]}
@@ -236,20 +237,37 @@ export default function AfriCeneFinance() {
           </div>
 
           <div className="grid lg:grid-cols-4 gap-6">
-            {[
-              'Statistical Arbitrage',
-              'AI Sentiment Analysis',
-              'Systematic Macro',
-              'Machine Learning Signals',
-            ].map((strategy) => (
+           {[
+             {
+              title: 'Statistical Arbitrage',
+              description:
+                <p>Mean Reversion • Relative-Value Trading • Cross-Market Inefficiency Detection • Market-Neutral Execution <br /><br /> We deploy quantitative statistical arbitrage models designed to identify temporary pricing dislocations across correlated assets, exchanges, and liquidity venues. Our infrastructure focuses on spread dynamics, volatility normalization, and execution efficiency to capture consistent alpha while minimizing directional market exposure.</p>,
+             },
+             {
+              title: 'AI Sentiment Analysis',
+              description:
+               <p>NLP Market Intelligence • Narrative Momentum Tracking • Social Sentiment Modeling • Behavioral Signal Extraction <br /><br /> We use machine learning and natural language processing to analyze financial news, social sentiment, and emerging market narratives in real time. This enables early detection of momentum shifts, crowd behavior, and sentiment-driven trading opportunities.</p>,
+             },
+             {
+              title: 'Systematic Macro',
+              description:
+               <p>Macro Regime Modeling • Event-Driven Positioning • Liquidity Cycle Analysis • Cross-Asset Forecasting <br /><br /> We model macroeconomic cycles, geopolitical developments, liquidity conditions, and policy events to identify high-conviction opportunities across global asset classes. Our framework combines quantitative research with alternative data to anticipate structural market shifts.</p>,
+            },
+            {
+              title: 'Machine Learning Signals',
+              description:
+                <p>Predictive Signal Generation • Multi-Factor AI Models • Volatility Forecasting • Adaptive Market Intelligence <br /><br /> We develop machine learning systems that process complex market, volatility, liquidity, and alternative datasets to generate predictive trading signals. Our adaptive models continuously refine themselves to uncover scalable investment opportunities in dynamic market environments.</p>,
+            },
+          ].map((strategy) => (
               <div
-                key={strategy}
+                key={strategy.title}
                 className="p-8 rounded-3xl border border-white/10 backdrop-blur-xl bg-white/[0.04]"
               >
-                <h3 className="text-2xl font-light mb-4">{strategy}</h3>
+                <h3 className="text-2xl font-light mb-4">
+                  {strategy.title}
+                </h3>
                 <p className="text-zinc-400 text-sm leading-relaxed">
-                  Conceptual research and infrastructure currently under long-term
-                  development.
+                  {strategy.description}
                 </p>
               </div>
             ))}
@@ -309,15 +327,15 @@ export default function AfriCeneFinance() {
 
           <div className="backdrop-blur-xl bg-white/[0.04] border border-white/10 rounded-[2rem] p-10 inline-block">
             <p className="text-zinc-400 mb-2">Email</p>
-            <h3 className="text-2xl">ajexflex@gmail.com</h3>
+            <h3 className="text-2xl">mltale007@myuct.ac.za</h3>
 
             <div className="mt-8 flex justify-center gap-4 flex-wrap">
               <div className="px-6 py-3 rounded-2xl bg-white/5 border border-white/10">
-                africeneventures.com
+                afrifin.co.za
               </div>
 
               <div className="px-6 py-3 rounded-2xl bg-white/5 border border-white/10">
-                africenefinance.com
+                github.com/AlexDeFlex
               </div>
             </div>
           </div>
