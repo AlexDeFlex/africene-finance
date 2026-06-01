@@ -1,6 +1,8 @@
+import Image from 'next/image';
+
 export default function AfriCeneFinance() {
   return (
-    <div className="min-h-screen bg-black text-white font-sans overflow-x-hidden">
+    <div className="min-h-screen bg-black text-white font-sans overflow-x-hidden smooth-scroll">
       {/* Background Effects */}
       <div className="fixed inset-0 bg-[radial-gradient(circle_at_top,rgba(20,40,90,0.35),transparent_45%)] pointer-events-none" />
       <div className="fixed inset-0 opacity-20 pointer-events-none">
@@ -24,11 +26,14 @@ export default function AfriCeneFinance() {
             <a href="#careers" className="hover:text-white transition">Careers</a>
             <a href="#contact" className="hover:text-white transition">Contact</a>
           </nav>
+          <button className="md:hidden text-white text-sm border border-white/20 px-4 py-2 rounded-xl">
+            Menu
+         </button>
         </div>
       </header>
 
       {/* HERO */}
-      <section className="relative min-h-screen flex items-center justify-center px-6">
+      <section className="relative min-h-screen flex items-center justify-center px-6 pt-32">
         <div className="absolute inset-0 bg-gradient-to-b from-black via-black/90 to-black" />
 
         <div className="relative z-10 max-w-6xl w-full grid lg:grid-cols-2 gap-16 items-center">
@@ -50,37 +55,37 @@ export default function AfriCeneFinance() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="px-8 py-4 rounded-2xl bg-white text-black font-medium hover:scale-105 transition">
+              <a
+                href="#explore"
+                className="px-8 py-4 rounded-2xl bg-white text-black font-medium hover:scale-105 transition text-center"
+              >
                 Explore The Firm
-              </button>
+              </a>
 
-              <button className="px-8 py-4 rounded-2xl border border-white/20 backdrop-blur-xl bg-white/5 hover:bg-white/10 transition">
+              <a
+                href="#insights"
+                className="px-8 py-4 rounded-2xl border border-white/20 backdrop-blur-xl bg-white/5 hover:bg-white/10 transition text-center"
+              >
                 Investor Insights
-              </button>
+              </a>
+              
             </div>
           </div>
 
           <div className="relative flex justify-center">
             <div className="absolute inset-0 bg-blue-500/10 blur-3xl rounded-full" />
 
-            <div className="relative overflow-hidden backdrop-blur-2xl bg-white/5 border border-white/10 rounded-[2rem] p-8 shadow-2xl max-w-lg w-full">
-              <img
+            <div className="relative overflow-hidden backdrop-blur-2xl bg-white/5 border border-white/10 rounded-[2rem] pt-8 px-8 pb-2 shadow-2xl max-w-lg w-full">
+              <Image
                 src="/afrifin.png"
                 alt="AfriCene Finance"
+                width={700}
+                height={700}
+                loading="eager"
                 className="rounded-2xl opacity-90"
               />
 
-              <div className="mt-8 grid grid-cols-2 gap-4 text-sm">
-                <div className="bg-white/5 border border-white/10 rounded-2xl p-4">
-                  <p className="text-zinc-400 mb-2">Focus</p>
-                  <h3 className="text-xl">AI Quant</h3>
-                </div>
-
-                <div className="bg-white/5 border border-white/10 rounded-2xl p-4">
-                  <p className="text-zinc-400 mb-2">Sector</p>
-                  <h3 className="text-xl">Hedge Fund</h3>
-                </div>
-              </div>
+              
             </div>
           </div>
         </div>
@@ -88,18 +93,98 @@ export default function AfriCeneFinance() {
         {/* Trading Ticker */}
         <div className="absolute bottom-0 left-0 right-0 border-t border-white/10 bg-black/80 backdrop-blur-xl overflow-hidden">
           <div className="flex whitespace-nowrap animate-pulse py-4 text-sm text-zinc-400 gap-16 px-10">
-            <span>NASDAQ +1.28%</span>
-            <span>S&P 500 +0.87%</span>
-            <span>AI SIGNALS ACTIVE</span>
+            <span>TALENT PIPELINE ACTIVE</span>
+            <span>STRATEGIC PARTNERSHIPS</span>
             <span>QUANT RESEARCH PIPELINE</span>
-            <span>VOLATILITY INDEX -0.14%</span>
-            <span>AFRICENE FINANCE SYSTEMS</span>
+            <span>QUANT TEAM 2026</span>
+            <span>EDUCATIONAL PROGRAMS</span>
+            <span>AI QUANT MODELS</span>
           </div>
         </div>
       </section>
 
+      <section id="explore" className="scroll-mt-32 max-w-5xl mx-auto px-6 py-32">
+         <p className="uppercase tracking-[0.3em] text-blue-300 text-xs mb-4">
+           Explore The Firm
+         </p>
+
+         <h2 className="text-5xl font-light mb-10">
+           Building a Future Financial Institution
+        </h2>
+
+       <div className="text-zinc-300 text-lg leading-relaxed space-y-6">
+         <p>
+           AfriCene Finance is currently in the development stage and is not yet operational. What exists today is a long-term vision: a research-driven financial enterprise being built with a commitment to professionalism, innovation, and regulatory compliance.
+         </p>
+
+         <p>
+           We believe that trust is earned through competence, transparency, and adherence to the law. As responsible corporate citizens, we recognize that financial services can only be provided within the framework of applicable regulations, licensing requirements, and industry standards. Protecting investors and maintaining public confidence remain fundamental priorities.
+         </p>
+
+         <p>
+           The company is presently registered through the CIPC and is focused on education, research, and strategic development. During this phase, we are dedicated to expanding our knowledge, refining investment methodologies, conducting market research, and developing robust quantitative and artificial intelligence-driven strategies.
+         </p>
+
+         <p>
+           Before commencing operations as an investment management or hedge fund business, several critical areas must be addressed; including regulatory licensing and authorization, legal and corporate governance structures, and compliance and anti-money laundering (AML) procedures.
+         </p>
+
+         <p>
+           At this stage, Africene Finance remains in a learning, research, and development phase. Our focus is on building expertise, creating value through rigorous analysis, and laying the foundation for a future organization that investors can trust and respect.
+         </p>
+
+         <p>
+           We look forward to transforming this vision into a fully compliant and professionally managed financial institution.
+         </p>
+       </div>
+      </section>
+
+      <section id="insights" className="scroll-mt-32 max-w-5xl mx-auto px-6 py-32 border-t border-white/10">
+         <p className="uppercase tracking-[0.3em] text-blue-300 text-xs mb-4">
+           Investor Insights
+         </p>
+
+         <h2 className="text-5xl font-light mb-10">
+           Finance with Long-Term Social Impact
+         </h2>
+
+       <div className="text-zinc-300 text-lg leading-relaxed space-y-6">
+         <p>
+           AfriCene Finance was founded on the belief that finance should not only create wealth but also contribute to the long-term prosperity of society.
+         </p>
+
+         <p>
+           While traditional hedge funds often focus primarily on institutional investors, family offices, pension funds, and high-net-worth individuals, our long-term vision includes exploring ways to expand financial inclusion and create opportunities for broader participation in wealth creation.
+         </p>
+
+         <p>
+           One area of particular interest is the entertainment industry. South Africa is home to extraordinary talent in music, film, television, and the creative arts.
+         </p>
+
+         <p>
+           As part of our future vision, we aim to explore specialized investment initiatives that support wealth preservation, financial literacy, retirement planning, and long-term capital growth for professionals in the creative economy.
+         </p>
+
+         <p>
+           Beyond the entertainment sector, we believe capital can be a powerful tool for economic development. Our broader vision includes supporting entrepreneurship, innovation, and business growth by helping connect capital with promising ventures that contribute to employment creation and economic progress.
+         </p>
+
+         <p>
+           We are also interested in exploring community-driven funding models that empower citizens to support meaningful causes, including education support, community infrastructure projects, and emergency assistance initiatives.
+         </p>
+
+         <p>
+           Any future products, investment vehicles, crowdfunding initiatives, or financial services would be developed in accordance with applicable laws, regulations, and licensing requirements.
+         </p>
+
+         <p>
+           At its core, Africene Finance seeks to combine financial excellence with social impact. Our ambition is to contribute to a future where investment capital not only generates returns but also helps build stronger communities, support innovation, and create opportunities for future generations.
+         </p>
+       </div>
+      </section>
+
       {/* ABOUT */}
-      <section id="about" className="max-w-7xl mx-auto px-6 py-32">
+      <section id="about" className="scroll-mt-32 max-w-7xl mx-auto px-6 py-32">
         <div className="grid lg:grid-cols-2 gap-16">
           <div>
             <p className="uppercase tracking-[0.3em] text-blue-300 text-xs mb-4">
@@ -162,14 +247,15 @@ export default function AfriCeneFinance() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               ['AfriCene Finance', 'HF | IB | PE'],
-              ['AfriCene Wire', 'Journalism & Media'],
+              ['AfriCene Wire', 'Tech Blog & Media'],
               ['AfriCene Projects', 'Project Management'],
               ['AfriCene Pharmaceuticals', 'Drug Development'],
               ['AfriCene MedTech', 'Health Innovation'],
-              ['AfriCene Technologies', 'Electronics'],
+              ['AfriCene Technologies', 'AI Hardware'],
               ['AfriCene Toxicology', 'Chemical Treatment'],
-              ['AfriCene Consultants', 'Advisory Services'],
+              ['AfriCene Consultancy', 'Advisory Services'],
               ['AfriCene Legal', 'Legal & Compliance'],
+              ['AfriCene Agency', 'Tech Talent Network'],
             ].map((item) => (
               <div
                 key={item[0]}
@@ -212,12 +298,12 @@ export default function AfriCeneFinance() {
 
           <div className="rounded-[2rem] border border-white/10 bg-gradient-to-br from-blue-950/30 to-black p-8 backdrop-blur-2xl">
             <div className="space-y-4 font-mono text-sm text-green-400">
-              <div>{'>'} Initializing AI market models...</div>
-              <div>{'>'} Loading quantitative datasets...</div>
-              <div>{'>'} Neural risk engine active...</div>
-              <div>{'>'} Statistical arbitrage monitoring...</div>
-              <div>{'>'} Portfolio optimization ready...</div>
-              <div>{'>'} Liquidity signals connected...</div>
+              <div>{'•'} Initializing AI market models...</div>
+              <div>{'•'} Loading quantitative datasets...</div>
+              <div>{'•'} Neural risk engine active...</div>
+              <div>{'•'} Statistical arbitrage monitoring...</div>
+              <div>{'•'} Portfolio optimization ready...</div>
+              <div>{'•'} Liquidity signals connected...</div>
             </div>
           </div>
         </div>
@@ -240,23 +326,23 @@ export default function AfriCeneFinance() {
            {[
              {
               title: 'Statistical Arbitrage',
-              description:
-                <p>Mean Reversion • Relative-Value Trading • Cross-Market Inefficiency Detection • Market-Neutral Execution <br /><br /> We deploy quantitative statistical arbitrage models designed to identify temporary pricing dislocations across correlated assets, exchanges, and liquidity venues. Our infrastructure focuses on spread dynamics, volatility normalization, and execution efficiency to capture consistent alpha while minimizing directional market exposure.</p>,
+              description: 
+              <p>Market-Neutral Research • Relative-Value Analysis • Quantitative Modeling • Execution Efficiency<br /><br />AfriCene Finance studies statistical arbitrage as one of the foundational disciplines of quantitative investing. Our research focuses on identifying temporary pricing dislocations between related securities, sectors, and markets through rigorous statistical analysis. By examining historical relationships, volatility behavior, and market structure dynamics, we aim to develop systematic frameworks that can identify opportunities while minimizing unnecessary directional market exposure. Our long-term objective is to build robust, research-driven models capable of adapting to evolving market conditions</p>
              },
              {
-              title: 'AI Sentiment Analysis',
+              title: 'Factor Investing',
               description:
-               <p>NLP Market Intelligence • Narrative Momentum Tracking • Social Sentiment Modeling • Behavioral Signal Extraction <br /><br /> We use machine learning and natural language processing to analyze financial news, social sentiment, and emerging market narratives in real time. This enables early detection of momentum shifts, crowd behavior, and sentiment-driven trading opportunities.</p>,
+              <p>Value • Momentum • Quality • Risk Factors • Long-Term Asset Pricing Research<br /><br />Factor investing represents one of the most extensively researched areas in modern finance. At AfriCene Finance, we study the drivers of long-term asset returns through the lens of academic and institutional research. Our work focuses on understanding how factors such as value, momentum, quality, and risk characteristics influence investment performance across different market environments. Through continuous analysis and data-driven research, we seek to develop systematic approaches that combine multiple factors into diversified investment frameworks.</p>,
              },
              {
               title: 'Systematic Macro',
               description:
-               <p>Macro Regime Modeling • Event-Driven Positioning • Liquidity Cycle Analysis • Cross-Asset Forecasting <br /><br /> We model macroeconomic cycles, geopolitical developments, liquidity conditions, and policy events to identify high-conviction opportunities across global asset classes. Our framework combines quantitative research with alternative data to anticipate structural market shifts.</p>,
+              <p>Economic Intelligence • Policy Analysis • Liquidity Cycles • Cross-Asset Research <br /><br />Financial markets are influenced by a complex interaction of economic, political, and monetary forces. Our systematic macro research seeks to understand these relationships through a structured and quantitative framework. We study macroeconomic indicators, central bank policies, liquidity conditions, and global market developments to identify long-term trends and investment themes. By combining economic analysis with quantitative methodologies, we aim to build a deeper understanding of how large-scale market forces shape investment opportunities across asset classes.</p>,
             },
             {
-              title: 'Machine Learning Signals',
+              title: 'Portfolio Optimization & Risk Management',
               description:
-                <p>Predictive Signal Generation • Multi-Factor AI Models • Volatility Forecasting • Adaptive Market Intelligence <br /><br /> We develop machine learning systems that process complex market, volatility, liquidity, and alternative datasets to generate predictive trading signals. Our adaptive models continuously refine themselves to uncover scalable investment opportunities in dynamic market environments.</p>,
+              <p>Capital Preservation • Portfolio Construction • Diversification Research • Volatility Management<br /><br /> Successful investing is not solely about identifying opportunities—it is also about managing risk responsibly. AfriCene Finance places significant emphasis on portfolio construction and risk management research as core pillars of its long-term vision. Our work explores diversification techniques, volatility management, position sizing methodologies, and portfolio optimization frameworks designed to improve risk-adjusted outcomes. We believe that disciplined risk management is essential to building sustainable investment processes and maintaining investor confidence over the long term.</p>,
             },
           ].map((strategy) => (
               <div
@@ -266,9 +352,9 @@ export default function AfriCeneFinance() {
                 <h3 className="text-2xl font-light mb-4">
                   {strategy.title}
                 </h3>
-                <p className="text-zinc-400 text-sm leading-relaxed">
+                <div className="text-zinc-400 text-sm leading-relaxed">
                   {strategy.description}
-                </p>
+                </div>
               </div>
             ))}
           </div>
