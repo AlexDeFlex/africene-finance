@@ -42,13 +42,13 @@ export default function AfriCeneFinance() {
               Emerging Quantitative Hedge Fund
             </p>
 
-            <h1 className="text-6xl md:text-8xl leading-none font-light tracking-tight mb-8">
+            <h1 className="text-7xl md:text-8xl font-light tracking-tight leading-none font-light tracking-tight mb-8">
               AfriCene
               <br />
               <span className="text-zinc-400">Finance</span>
             </h1>
 
-            <p className="text-zinc-300 text-lg leading-relaxed max-w-xl mb-10">
+            <p className="text-zinc-300 text-xl leading-relaxed text-zinc-300 leading-relaxed max-w-xl mb-10">
               Building the future intersection of artificial intelligence,
               quantitative finance, and institutional research from Africa to
               global markets.
@@ -75,24 +75,22 @@ export default function AfriCeneFinance() {
           <div className="relative flex justify-center">
             <div className="absolute inset-0 bg-blue-500/10 blur-3xl rounded-full" />
 
-            <div className="relative overflow-hidden backdrop-blur-2xl bg-white/5 border border-white/10 rounded-[2rem] pt-8 px-8 pb-2 shadow-2xl max-w-lg w-full">
+            <div className="relative w-full aspect-square">
               <Image
                 src="/afrifin.png"
                 alt="AfriCene Finance"
-                width={700}
-                height={700}
-                loading="eager"
-                className="rounded-2xl opacity-90"
+                fill
+                priority
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className="rounded-2xl opacity-90 object-cover"
               />
-
-              
             </div>
           </div>
         </div>
 
         {/* Trading Ticker */}
         <div className="absolute bottom-0 left-0 right-0 border-t border-white/10 bg-black/80 backdrop-blur-xl overflow-hidden">
-          <div className="flex whitespace-nowrap animate-pulse py-4 text-sm text-zinc-400 gap-16 px-10">
+          <div className="flex whitespace-nowrap animate-pulse py-4 text-sm text-zinc-300 leading-relaxed gap-16 px-10">
             <span>TALENT PIPELINE ACTIVE</span>
             <span>STRATEGIC PARTNERSHIPS</span>
             <span>QUANT RESEARCH PIPELINE</span>
@@ -108,11 +106,11 @@ export default function AfriCeneFinance() {
            Explore The Firm
          </p>
 
-         <h2 className="text-5xl font-light mb-10">
+         <h2 className="text-6xl md:text-7xl font-light tracking-tight font-light mb-10">
            Building a Future Financial Institution
         </h2>
 
-       <div className="text-zinc-300 text-lg leading-relaxed space-y-6">
+       <div className="text-zinc-300 text-xl leading-relaxed text-zinc-300 leading-relaxed space-y-6">
          <p>
            AfriCene Finance is currently in the development stage and is not yet operational. What exists today is a long-term vision: a research-driven financial enterprise being built with a commitment to professionalism, innovation, and regulatory compliance.
          </p>
@@ -144,11 +142,11 @@ export default function AfriCeneFinance() {
            Investor Insights
          </p>
 
-         <h2 className="text-5xl font-light mb-10">
+         <h2 className="text-6xl md:text-7xl font-light tracking-tight font-light mb-10">
            Finance with Long-Term Social Impact
          </h2>
 
-       <div className="text-zinc-300 text-lg leading-relaxed space-y-6">
+       <div className="text-zinc-300 text-xl leading-relaxed text-zinc-300 leading-relaxed space-y-6">
          <p>
            AfriCene Finance was founded on the belief that finance should not only create wealth but also contribute to the long-term prosperity of society.
          </p>
@@ -184,19 +182,19 @@ export default function AfriCeneFinance() {
       </section>
 
       {/* ABOUT */}
-      <section id="about" className="scroll-mt-32 max-w-7xl mx-auto px-6 py-32">
+      <section id="about" className="scroll-mt-32 max-w-6xl mx-auto px-8 md:px-12 py-40">
         <div className="grid lg:grid-cols-2 gap-16">
           <div>
             <p className="uppercase tracking-[0.3em] text-blue-300 text-xs mb-4">
               About Us
             </p>
 
-            <h2 className="text-5xl font-light mb-8 leading-tight">
+            <h2 className="text-6xl md:text-7xl font-light tracking-tight font-light mb-8 leading-tight">
               A vision born from adversity, research, and innovation.
             </h2>
           </div>
 
-          <div className="space-y-6 text-zinc-300 leading-relaxed text-lg">
+          <div className="space-y-6 text-zinc-300 leading-relaxed text-xl leading-relaxed text-zinc-300">
             <p>
               AfriCene Finance is an emerging AI and quantitative finance company
               currently in development, established with the long-term vision of
@@ -226,18 +224,18 @@ export default function AfriCeneFinance() {
       </section>
 
       {/* HOLDINGS */}
-      <section id="firm" className="bg-white/[0.03] border-y border-white/10 py-32 px-6">
+      <section id="firm" className="bg-white/[0.02] border-y border-white/10 py-32 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="mb-20">
             <p className="uppercase tracking-[0.3em] text-blue-300 text-xs mb-4">
               Our Ecosystem
             </p>
 
-            <h2 className="text-5xl font-light mb-6">
+            <h2 className="text-6xl md:text-7xl font-light tracking-tight font-light mb-6">
               Future AfriCene Holdings Structure
             </h2>
 
-            <p className="text-zinc-400 max-w-3xl text-lg">
+            <p className="text-zinc-400 max-w-3xl text-xl leading-relaxed text-zinc-300">
               AfriCene Finance is envisioned as the financial engine supporting
               a broader ecosystem of research, technology, healthcare, and
               industrial innovation.
@@ -259,7 +257,7 @@ export default function AfriCeneFinance() {
             ].map((item) => (
               <div
                 key={item[0]}
-                className="backdrop-blur-xl bg-white/[0.04] border border-white/10 rounded-3xl p-8 hover:border-blue-400/30 transition"
+                className="backdrop-blur-xl bg-white/[0.04] border border-white/10 rounded-3xl p-10 hover:border-blue-400/30 transition"
               >
                 <h3 className="text-2xl mb-3 font-light">{item[0]}</h3>
                 <p className="text-zinc-400">{item[1]}</p>
@@ -270,18 +268,18 @@ export default function AfriCeneFinance() {
       </section>
 
       {/* AI LAB */}
-      <section id="lab" className="max-w-7xl mx-auto px-6 py-32">
+      <section id="lab" className="max-w-6xl mx-auto px-8 md:px-12 py-40">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
             <p className="uppercase tracking-[0.3em] text-blue-300 text-xs mb-4">
               AI Quant Lab
             </p>
 
-            <h2 className="text-5xl font-light mb-8 leading-tight">
+            <h2 className="text-6xl md:text-7xl font-light tracking-tight font-light mb-8 leading-tight">
               Artificial intelligence infrastructure for modern markets.
             </h2>
 
-            <div className="space-y-6 text-zinc-300 text-lg leading-relaxed">
+            <div className="space-y-6 text-zinc-300 text-xl leading-relaxed text-zinc-300 leading-relaxed">
               <p>
                 AfriCene Finance aims to build AI-driven systems for quantitative
                 research, market analysis, risk intelligence, and predictive
@@ -296,7 +294,7 @@ export default function AfriCeneFinance() {
             </div>
           </div>
 
-          <div className="rounded-[2rem] border border-white/10 bg-gradient-to-br from-blue-950/30 to-black p-8 backdrop-blur-2xl">
+          <div className="rounded-[2rem] border border-white/10 bg-gradient-to-br from-blue-950/30 to-black p-10 backdrop-blur-2xl">
             <div className="space-y-4 font-mono text-sm text-green-400">
               <div>{'•'} Initializing AI market models...</div>
               <div>{'•'} Loading quantitative datasets...</div>
@@ -310,14 +308,14 @@ export default function AfriCeneFinance() {
       </section>
 
       {/* STRATEGIES */}
-      <section id="strategies" className="py-32 px-6 bg-white/[0.03] border-y border-white/10">
+      <section id="strategies" className="py-32 px-6 bg-white/[0.0] border-y border-white/10">
         <div className="max-w-7xl mx-auto">
           <div className="mb-20">
             <p className="uppercase tracking-[0.3em] text-blue-300 text-xs mb-4">
               Strategies
             </p>
 
-            <h2 className="text-5xl font-light mb-6">
+            <h2 className="text-6xl md:text-7xl font-light tracking-tight font-light mb-6">
               Research-driven quantitative approaches.
             </h2>
           </div>
@@ -347,7 +345,7 @@ export default function AfriCeneFinance() {
           ].map((strategy) => (
               <div
                 key={strategy.title}
-                className="p-8 rounded-3xl border border-white/10 backdrop-blur-xl bg-white/[0.04]"
+                className="p-10 rounded-3xl border border-white/10 backdrop-blur-xl bg-white/[0.04]"
               >
                 <h3 className="text-2xl font-light mb-4">
                   {strategy.title}
@@ -362,19 +360,19 @@ export default function AfriCeneFinance() {
       </section>
 
       {/* CAREERS */}
-      <section id="careers" className="max-w-7xl mx-auto px-6 py-32">
+      <section id="careers" className="max-w-6xl mx-auto px-8 md:px-12 py-40">
         <div className="grid lg:grid-cols-2 gap-16">
           <div>
             <p className="uppercase tracking-[0.3em] text-blue-300 text-xs mb-4">
               Careers & Network
             </p>
 
-            <h2 className="text-5xl font-light mb-8">
+            <h2 className="text-6xl md:text-7xl font-light tracking-tight font-light mb-8">
               Building through talent, collaboration, and research.
             </h2>
           </div>
 
-          <div className="space-y-6 text-zinc-300 text-lg leading-relaxed">
+          <div className="space-y-6 text-zinc-300 text-xl leading-relaxed text-zinc-300 leading-relaxed">
             <p>
               AfriCene recruits through networking, collaborative research,
               technical projects, and long-term partnerships.
@@ -401,11 +399,11 @@ export default function AfriCeneFinance() {
             Contact
           </p>
 
-          <h2 className="text-5xl font-light mb-8">
+          <h2 className="text-6xl md:text-7xl font-light tracking-tight font-light mb-8">
             Building institutional intelligence.
           </h2>
 
-          <p className="text-zinc-400 text-lg mb-10 max-w-2xl mx-auto">
+          <p className="text-zinc-400 text-xl leading-relaxed text-zinc-300 mb-10 max-w-2xl mx-auto">
             AfriCene Finance is currently in development and open to strategic
             networking opportunities, research collaborations, and future
             partnerships.
