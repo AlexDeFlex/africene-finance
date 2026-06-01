@@ -75,7 +75,7 @@ export default function AfriCeneFinance() {
           <div className="relative flex justify-center">
             <div className="absolute inset-0 bg-blue-500/10 blur-3xl rounded-full" />
 
-            <div className="relative w-full aspect-square max-w-lg overflow-hidden rounded-2xl border border-white/10 bg-white/5">
+            <div className="relative w-full aspect-square">
               <Image
                 src="/afrifin.png"
                 alt="AfriCene Finance"
