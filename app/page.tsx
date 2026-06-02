@@ -251,10 +251,10 @@ export default function AfriCeneFinance() {
               ['AfriCene Projects', 'Project Management'],
               ['AfriCene Pharmaceuticals', 'Drug Development'],
               ['AfriCene MedTech', 'Health Innovation'],
-              ['AfriCene Technologies', 'AI Electronics'],
+              ['AfriCene Technologies', 'AI Hardware'],
               ['AfriCene Toxicology', 'Chemical Treatment'],
-              ['AfriCene Consultantancy', 'Advisory Services'],
-              ['AfriCene Legal', 'Law & Compliance'],
+              ['AfriCene Consultancy', 'Advisory Services'],
+              ['AfriCene Legal', 'Legal & Compliance'],
               ['AfriCene Agency', 'Tech Talent Network'],
             ].map((item) => (
               <div
