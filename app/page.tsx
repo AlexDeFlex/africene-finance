@@ -413,15 +413,15 @@ export default function AfriCeneFinance() {
 
           <div className="backdrop-blur-xl bg-white/[0.04] border border-white/10 rounded-[2rem] p-10 inline-block">
             <p className="text-zinc-400 mb-2">Email</p>
-            <h3 className="text-2xl">ajexflex@gmail.com</h3>
+            <h3 className="text-2xl">malatsialex@gmail.com</h3>
 
             <div className="mt-8 flex justify-center gap-4 flex-wrap">
               <div className="px-6 py-3 rounded-2xl bg-white/5 border border-white/10">
-                africeneventures.com
+                +27 79 777 5836
               </div>
 
               <div className="px-6 py-3 rounded-2xl bg-white/5 border border-white/10">
-                africenefinance.com
+                github.com/AlexDeFlex
               </div>
             </div>
           </div>
