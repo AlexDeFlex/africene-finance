@@ -1,432 +1,289 @@
+/** @jsxRuntime classic */
+/** @jsx React.createElement */
+import React from "react";
+import { FlaskConical, GraduationCap, ShieldCheck, Rocket, Dna, BookOpen, Mail, Phone, MapPin } from "lucide-react";
+
+declare global {
+  namespace JSX {
+    interface IntrinsicElements {
+      [elementName: string]: any;
+    }
+  }
+}
+
 export default function AfriCeneFinance() {
   return (
-    <div className="min-h-screen bg-black text-white font-sans overflow-x-hidden">
-      {/* Background Effects */}
-      <div className="fixed inset-0 bg-[radial-gradient(circle_at_top,rgba(20,40,90,0.35),transparent_45%)] pointer-events-none" />
-      <div className="fixed inset-0 opacity-20 pointer-events-none">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-blue-900 blur-3xl rounded-full" />
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-slate-700 blur-3xl rounded-full" />
-      </div>
+    <div className="min-h-screen bg-[#EFEFEA] text-[#12181F] font-sans">
+      <style>{`
+        @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,400&family=Inter:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap');
+        .font-display { font-family: 'Fraunces', serif; }
+        .font-mono { font-family: 'IBM Plex Mono', monospace; }
+      `}</style>
 
-      {/* NAVBAR */}
-      <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-black/40 border-b border-white/10">
-        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      {/* NAV */}
+      <header className="sticky top-0 z-50 bg-[#EFEFEA]/90 backdrop-blur-md border-b border-[#D9D6CC]">
+        <div className="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
           <div>
-            <h1 className="text-2xl tracking-wide font-light">AfriCene Finance</h1>
-            <p className="text-xs text-zinc-400 tracking-[0.3em] uppercase">AI & Quantitative Intelligence</p>
+            <p className="font-display text-xl tracking-tight">AfriCene</p>
+            <p className="font-mono text-[10px] tracking-[0.25em] text-[#5F6A72] -mt-0.5">FINANCE</p>
           </div>
-
-          <nav className="hidden md:flex gap-8 text-sm text-zinc-300">
-            <a href="#about" className="hover:text-white transition">About</a>
-            <a href="#firm" className="hover:text-white transition">Our Firm</a>
-            <a href="#lab" className="hover:text-white transition">AI Quant Lab</a>
-            <a href="#strategies" className="hover:text-white transition">Strategies</a>
-            <a href="#careers" className="hover:text-white transition">Careers</a>
-            <a href="#contact" className="hover:text-white transition">Contact</a>
+          <nav className="hidden md:flex gap-10 text-sm text-[#3A4148]">
+            <a href="#vision" className="hover:text-[#16273D] transition">Vision</a>
+            <a href="#focus" className="hover:text-[#16273D] transition">Focus</a>
+            <a href="#journey" className="hover:text-[#16273D] transition">Journey</a>
+            <a href="#ecosystem" className="hover:text-[#16273D] transition">Ecosystem</a>
+            <a href="#contact" className="hover:text-[#16273D] transition">Contact</a>
           </nav>
         </div>
       </header>
 
       {/* HERO */}
-      <section className="relative min-h-screen flex items-center justify-center px-6">
-        <div className="absolute inset-0 bg-gradient-to-b from-black via-black/90 to-black" />
-
-        <div className="relative z-10 max-w-6xl w-full grid lg:grid-cols-2 gap-16 items-center">
-          <div>
-            <p className="uppercase tracking-[0.4em] text-blue-300 text-xs mb-6">
-              Emerging Quantitative Hedge Fund
-            </p>
-
-            <h1 className="text-6xl md:text-8xl leading-none font-light tracking-tight mb-8">
-              AfriCene
-              <br />
-              <span className="text-zinc-400">Finance</span>
-            </h1>
-
-            <p className="text-zinc-300 text-lg leading-relaxed max-w-xl mb-10">
-              Building the future intersection of artificial intelligence,
-              quantitative finance, and institutional research from Africa to
-              global markets.
-            </p>
-
-            <div className="flex flex-wrap gap-4">
-              <a
-                href="#explore"
-                className="px-8 py-4 rounded-2xl bg-white text-black font-medium hover:scale-105 transition text-center"
-              >
-                Explore The Firm
-              </a>
-
-              <a
-                href="#insights"
-                className="px-8 py-4 rounded-2xl border border-white/20 backdrop-blur-xl bg-white/5 hover:bg-white/10 transition text-center"
-              >
-                Investor Insights
-              </a>
-            </div>
-          </div>
-
-          <div className="relative flex justify-center">
-            <div className="absolute inset-0 bg-blue-500/10 blur-3xl rounded-full" />
-
-            <div className="relative backdrop-blur-2xl bg-white/5 border border-white/10 rounded-[2rem] p-8 shadow-2xl max-w-lg w-full">
-              <img
-                src="/mnt/data/ChatGPT Image May 17, 2026, 01_28_19 AM.png"
-                alt="AfriCene Finance"
-                className="rounded-2xl opacity-90"
-              />
-
-              <div className="mt-8 grid grid-cols-2 gap-4 text-sm">
-                <div className="bg-white/5 border border-white/10 rounded-2xl p-4">
-                  <p className="text-zinc-400 mb-2">Focus</p>
-                  <h3 className="text-xl">AI Quant</h3>
-                </div>
-
-                <div className="bg-white/5 border border-white/10 rounded-2xl p-4">
-                  <p className="text-zinc-400 mb-2">Sector</p>
-                  <h3 className="text-xl">Hedge Fund</h3>
-                </div>
-              </div>
-            </div>
+      <section className="max-w-6xl mx-auto px-6 pt-20 pb-24 grid lg:grid-cols-[1.1fr,0.9fr] gap-16 items-center">
+        <div>
+          <p className="font-mono text-[11px] tracking-[0.25em] text-[#3F6B5E] mb-6">
+            IN DEVELOPMENT — PRETORIA, SOUTH AFRICA
+          </p>
+          <h1 className="font-display font-light text-5xl md:text-6xl leading-[1.08] tracking-tight mb-8">
+            Capital, built to fund the science that changes lives.
+          </h1>
+          <p className="text-[#3A4148] text-lg leading-relaxed max-w-xl mb-10">
+            AfriCene Finance is an emerging asset management firm, currently in its
+            research and foundation phase. We exist to build long-term investment
+            discipline toward one purpose: directing capital into medical science,
+            drug development, and biomedical engineering.
+          </p>
+          <div className="flex flex-wrap gap-4">
+            <a href="#vision" className="px-7 py-3.5 rounded-full bg-[#16273D] text-[#EFEFEA] text-sm font-medium hover:bg-[#0E1B2B] transition">
+              Read our thesis
+            </a>
+            <a href="#contact" className="px-7 py-3.5 rounded-full border border-[#16273D]/25 text-sm font-medium hover:bg-white transition">
+              Get in touch
+            </a>
           </div>
         </div>
 
-        {/* Trading Ticker */}
-        <div className="absolute bottom-0 left-0 right-0 border-t border-white/10 bg-black/80 backdrop-blur-xl overflow-hidden">
-          <div className="flex whitespace-nowrap animate-pulse py-4 text-sm text-zinc-400 gap-16 px-10">
-            <span>TALENT ACTIVE PIPELINE</span>
-            <span>STRATEGIC PARTNERSHIPS</span>
-            <span>AI SIGNAL MODELS</span>
-            <span>QUANT RESEARCH PIPELINE</span>
-            <span>2026 QUANT TEAM</span>
-            <span>AFRICENE FINANCE SYSTEMS</span>
+        {/* Abstract molecule / lattice motif — hero visual */}
+        <div className="relative aspect-square max-w-md mx-auto w-full">
+          <svg viewBox="0 0 400 400" className="w-full h-full">
+            <g stroke="#16273D" strokeOpacity="0.18" strokeWidth="1">
+              <line x1="0" y1="80" x2="400" y2="80" />
+              <line x1="0" y1="200" x2="400" y2="200" />
+              <line x1="0" y1="320" x2="400" y2="320" />
+              <line x1="100" y1="0" x2="100" y2="400" />
+              <line x1="300" y1="0" x2="300" y2="400" />
+            </g>
+            <g stroke="#3F6B5E" strokeWidth="1.5" fill="none" strokeOpacity="0.9">
+              <line x1="100" y1="80" x2="230" y2="150" />
+              <line x1="230" y1="150" x2="180" y2="290" />
+              <line x1="230" y1="150" x2="320" y2="200" />
+              <line x1="180" y1="290" x2="300" y2="320" />
+            </g>
+            <circle cx="100" cy="80" r="7" fill="#16273D" />
+            <circle cx="230" cy="150" r="10" fill="#3F6B5E" />
+            <circle cx="180" cy="290" r="7" fill="#16273D" />
+            <circle cx="320" cy="200" r="6" fill="#9C7A3C" />
+            <circle cx="300" cy="320" r="7" fill="#16273D" />
+          </svg>
+        </div>
+      </section>
+
+      {/* VISION */}
+      <section id="vision" className="border-t border-[#D9D6CC] bg-white/50">
+        <div className="max-w-6xl mx-auto px-6 py-24 grid lg:grid-cols-[0.8fr,1.2fr] gap-16">
+          <div>
+            <p className="font-mono text-[11px] tracking-[0.25em] text-[#3F6B5E] mb-4">VISION</p>
+            <h2 className="font-display font-light text-4xl leading-tight">
+              Why this fund exists.
+            </h2>
+          </div>
+          <div className="space-y-6 text-[#3A4148] text-lg leading-relaxed">
+            <p>
+              The idea for AfriCene Finance did not begin in a trading room. It began
+              in health sciences — in early exposure to toxicology, human physiology,
+              and the slow, expensive, capital-intensive path a discovery takes
+              before it ever reaches a patient.
+            </p>
+            <p>
+              That path is where the realization took hold: finance sits at the
+              centre of medical progress. Every drug, device, and biomedical
+              breakthrough is, eventually, a question of who was willing to fund it
+              — and how well that capital was managed.
+            </p>
+            <p>
+              AfriCene Finance is being built to answer that question. Our long-term
+              purpose is to become an asset manager whose capital is directed,
+              deliberately, toward medical science, drug development, and biomedical
+              engineering — treating financial discipline as the foundation that
+              makes scientific ambition possible.
+            </p>
           </div>
         </div>
       </section>
 
-      <><section id="explore" className="max-w-7xl mx-auto px-6 py-32">
-          <p className="uppercase tracking-[0.3em] text-blue-300 text-xs mb-4">
-            Explore The Firm
+      {/* STAGE DISCLOSURE */}
+      <section className="max-w-6xl mx-auto px-6 py-20">
+        <div className="rounded-2xl border border-[#D9D6CC] bg-white px-8 py-10 md:px-12 md:py-12">
+          <p className="font-mono text-[11px] tracking-[0.25em] text-[#3F6B5E] mb-4">WHERE WE ARE TODAY</p>
+          <p className="text-[#3A4148] text-lg leading-relaxed max-w-3xl">
+            AfriCene Finance is registered with the CIPC and is not yet operating as
+            a licensed investment manager. We are in a deliberate research and
+            education phase — building the regulatory, compliance, and quantitative
+            foundation required before we manage a single rand of client capital.
+            We believe trust in this industry is earned through competence and
+            transparency, not promises made ahead of readiness.
           </p>
+        </div>
+      </section>
 
-          <h2 className="text-5xl font-light mb-8 leading-tight">
-            Building a Future Financial Institution
+      {/* FOCUS AREAS */}
+      <section id="focus" className="border-t border-[#D9D6CC] bg-[#16273D] text-[#EFEFEA]">
+        <div className="max-w-6xl mx-auto px-6 py-24">
+          <p className="font-mono text-[11px] tracking-[0.25em] text-[#9FD4C2] mb-4">FOCUS</p>
+          <h2 className="font-display font-light text-4xl leading-tight mb-16 max-w-2xl">
+            Where we intend to direct capital.
           </h2>
 
-          <div className="space-y-6 text-zinc-300 leading-relaxed text-lg">
-            <p>
-              AfriCene Finance is currently in the development stage and is not yet operational. What exists today is a long-term vision: a research-driven financial enterprise being built with a commitment to professionalism, innovation, and regulatory compliance.
-            </p>
-
-            <p>
-              We believe that trust is earned through competence, transparency, and adherence to the law. As responsible corporate citizens, we recognize that financial services can only be provided within the framework of applicable regulations, licensing requirements, and industry standards. Protecting investors and maintaining public confidence remain fundamental priorities.
-            </p>
-
-            <p>
-              The company is presently registered through the CIPC and is focused on education, research, and strategic development. During this phase, we are dedicated to expanding our knowledge, refining investment methodologies, conducting market research, and developing robust quantitative and artificial intelligence-driven strategies.
-            </p>
-
-            <p>
-              Before commencing operations as an investment management or hedge fund business, several critical areas must be addressed; including regulatory licensing and authorization, legal and corporate governance structures, and compliance and anti-money laundering (AML) procedures.
-            </p>
-
-            <p>
-              At this stage, Africene Finance remains in a learning, research, and development phase. Our focus is on building expertise, creating value through rigorous analysis, and laying the foundation for a future organization that investors can trust and respect.
-            </p>
-
-            <p>
-              We look forward to transforming this vision into a fully compliant and professionally managed financial institution.
-            </p>
-          </div>
-
-        </section><section id="insights" className="max-w-7xl mx-auto px-6 py-32">
-            <p className="uppercase tracking-[0.3em] text-blue-300 text-xs mb-4">
-              Investor Insights
-            </p>
-
-            <h2 className="text-5xl font-light mb-8 leading-tight">
-              Finance with Long-Term Social Impact
-            </h2>
-
-            <div className="space-y-6 text-zinc-300 leading-relaxed text-lg">
-              <p>
-                AfriCene Finance was founded on the belief that finance should not only create wealth but also contribute to the long-term prosperity of society.
-              </p>
-
-              <p>
-                While traditional hedge funds often focus primarily on institutional investors, family offices, pension funds, and high-net-worth individuals, our long-term vision includes exploring ways to expand financial inclusion and create opportunities for broader participation in wealth creation.
-              </p>
-
-              <p>
-                One area of particular interest is the entertainment industry. South Africa is home to extraordinary talent in music, film, television, and the creative arts.
-              </p>
-
-              <p>
-                As part of our future vision, we aim to explore specialized investment initiatives that support wealth preservation, financial literacy, retirement planning, and long-term capital growth for professionals in the creative economy.
-              </p>
-
-              <p>
-                Beyond the entertainment sector, we believe capital can be a powerful tool for economic development. Our broader vision includes supporting entrepreneurship, innovation, and business growth by helping connect capital with promising ventures that contribute to employment creation and economic progress.
-              </p>
-
-              <p>
-                We are also interested in exploring community-driven funding models that empower citizens to support meaningful causes, including education support, community infrastructure projects, and emergency assistance initiatives.
-              </p>
-
-              <p>
-                Any future products, investment vehicles, crowdfunding initiatives, or financial services would be developed in accordance with applicable laws, regulations, and licensing requirements.
-              </p>
-
-              <p>
-                At its core, Africene Finance seeks to combine financial excellence with social impact. Our ambition is to contribute to a future where investment capital not only generates returns but also helps build stronger communities, support innovation, and create opportunities for future generations.
-              </p>
-            </div>
-          </section></>
-
-      {/* ABOUT */}
-      <section id="about" className="max-w-7xl mx-auto px-6 py-32">
-        <div className="grid lg:grid-cols-2 gap-16">
-          <div>
-            <p className="uppercase tracking-[0.3em] text-blue-300 text-xs mb-4">
-              About Us
-            </p>
-
-            <h2 className="text-5xl font-light mb-8 leading-tight">
-              A vision born from adversity, research, and innovation.
-            </h2>
-          </div>
-
-          <div className="space-y-6 text-zinc-300 leading-relaxed text-lg">
-            <p>
-              AfriCene Finance is an emerging AI and quantitative finance company
-              currently in development, established with the long-term vision of
-              becoming part of AfriCene Holdings - a multidisciplinary group of
-              companies spanning finance, health sciences, artificial
-              intelligence, pharmaceuticals, engineering, research, media, and
-              legal advisory.
-            </p>
-
-            <p>
-              The foundation of the company originates from a journey shaped by
-              setbacks in health sciences, exposure to toxicology and human
-              physiology research, and later encounters with quantitative
-              finance and algorithmic trading. The realization emerged that
-              finance stands at the center of innovation - funding research,
-              medical advancement, and technological development during times of
-              global need.
-            </p>
-
-            <p>
-              AfriCene Finance exists to build systems capable of funding future
-              breakthroughs through intelligence, disciplined research, and
-              long-term institutional thinking.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* HOLDINGS */}
-      <section id="firm" className="bg-white/[0.03] border-y border-white/10 py-32 px-6">
-        <div className="max-w-7xl mx-auto">
-          <div className="mb-20">
-            <p className="uppercase tracking-[0.3em] text-blue-300 text-xs mb-4">
-              Our Ecosystem
-            </p>
-
-            <h2 className="text-5xl font-light mb-6">
-              Future AfriCene Holdings Structure
-            </h2>
-
-            <p className="text-zinc-400 max-w-3xl text-lg">
-              AfriCene Finance is envisioned as the financial engine supporting
-              a broader ecosystem of research, technology, healthcare, and
-              industrial innovation.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-3 gap-8">
             {[
-              ['AfriCene Finance', 'HF | IB | PE'],
-              ['AfriCene Wire', 'Tech Blog & Media'],
-              ['AfriCene Projects', 'Project Management'],
-              ['AfriCene Pharmaceuticals', 'Drug Development'],
-              ['AfriCene MedTech', 'Health Innovation'],
-              ['AfriCene Technologies', 'AI Hardware'],
-              ['AfriCene Toxicology', 'Chemical Treatment'],
-              ['AfriCene Consultancy', 'Advisory Services'],
-              ['AfriCene Legal', 'Legal & Compliance'],
-              ['AfriCene Agency', 'Tech Talent Network'],
+              {
+                icon: FlaskConical,
+                title: "Medical Sciences & Drug Development",
+                body: "Long-term capital thinking applied to the research and development pipelines behind new treatments and therapies.",
+              },
+              {
+                icon: Dna,
+                title: "Biomedical Engineering",
+                body: "Funding attention toward the tools, devices, and technology infrastructure that next-generation healthcare depends on.",
+              },
+              {
+                icon: BookOpen,
+                title: "Quantitative & Financial Research",
+                body: "The discipline we are building now — market research, data analysis, and formal study, ahead of any capital deployment.",
+              },
             ].map((item) => (
-              <div
-                key={item[0]}
-                className="backdrop-blur-xl bg-white/[0.04] border border-white/10 rounded-3xl p-8 hover:border-blue-400/30 transition"
-              >
-                <h3 className="text-2xl mb-3 font-light">{item[0]}</h3>
-                <p className="text-zinc-400">{item[1]}</p>
+              <div key={item.title} className="border border-white/15 rounded-2xl p-8 bg-white/[0.03]">
+                <item.icon className="w-6 h-6 text-[#9FD4C2] mb-6" strokeWidth={1.5} />
+                <h3 className="font-display text-xl font-light mb-3">{item.title}</h3>
+                <p className="text-white/70 text-sm leading-relaxed">{item.body}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* AI LAB */}
-      <section id="lab" className="max-w-7xl mx-auto px-6 py-32">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
-          <div>
-            <p className="uppercase tracking-[0.3em] text-blue-300 text-xs mb-4">
-              AI Quant Lab
-            </p>
+      {/* JOURNEY — signature timeline */}
+      <section id="journey" className="max-w-6xl mx-auto px-6 py-24">
+        <p className="font-mono text-[11px] tracking-[0.25em] text-[#3F6B5E] mb-4">JOURNEY</p>
+        <h2 className="font-display font-light text-4xl leading-tight mb-16 max-w-2xl">
+          The path from research to a licensed fund.
+        </h2>
 
-            <h2 className="text-5xl font-light mb-8 leading-tight">
-              Artificial intelligence infrastructure for modern markets.
-            </h2>
-
-            <div className="space-y-6 text-zinc-300 text-lg leading-relaxed">
-              <p>
-                AfriCene Finance aims to build AI-driven systems for quantitative
-                research, market analysis, risk intelligence, and predictive
-                modeling.
-              </p>
-
-              <p>
-                The long-term objective is to integrate machine learning,
-                algorithmic strategies, financial data engineering, and economic
-                research into a scalable institutional platform.
-              </p>
+        <div className="relative pl-10">
+          <div className="absolute left-[7px] top-2 bottom-2 w-px bg-[#D9D6CC]" />
+          {[
+            {
+              icon: ShieldCheck,
+              stage: "Foundation & research",
+              when: "Current",
+              body: "Registered with the CIPC. Dedicated to market study, financial research, and disciplined groundwork rather than active investing.",
+            },
+            {
+              icon: GraduationCap,
+              stage: "Formal education",
+              when: "January 2027",
+              body: "Our founder begins a Master of Science in Financial Engineering at WorldQuant University, formalising the quantitative foundation the firm is built on.",
+            },
+            {
+              icon: ShieldCheck,
+              stage: "Regulatory licensing",
+              when: "Ahead",
+              body: "Pursuing the legal structure, compliance framework, and anti-money laundering procedures required to operate as a licensed investment manager.",
+            },
+            {
+              icon: Rocket,
+              stage: "Fund launch",
+              when: "Ahead",
+              body: "Bringing the vision to investors — fully compliant, professionally managed, and built on the foundation laid in the stages before it.",
+            },
+          ].map((step) => (
+            <div key={step.stage} className="relative pb-14 last:pb-0">
+              <div className="absolute -left-10 top-0 w-4 h-4 rounded-full bg-[#EFEFEA] border-2 border-[#3F6B5E]" />
+              <p className="font-mono text-xs tracking-[0.15em] text-[#9C7A3C] mb-2">{step.when}</p>
+              <h3 className="font-display text-2xl font-light mb-2">{step.stage}</h3>
+              <p className="text-[#3A4148] leading-relaxed max-w-xl">{step.body}</p>
             </div>
-          </div>
-
-          <div className="rounded-[2rem] border border-white/10 bg-gradient-to-br from-blue-950/30 to-black p-8 backdrop-blur-2xl">
-            <div className="space-y-4 font-mono text-sm text-navyblue-400">
-              <div>{'•'} Initializing AI market models...</div>
-              <div>{'•'} Loading quantitative datasets...</div>
-              <div>{'•'} Neural risk engine active...</div>
-              <div>{'•'} Statistical arbitrage monitoring...</div>
-              <div>{'•'} Portfolio optimization ready...</div>
-              <div>{'•'} Liquidity signals connected...</div>
-            </div>
-          </div>
+          ))}
         </div>
       </section>
 
-      {/* STRATEGIES */}
-      <section id="strategies" className="py-32 px-6 bg-white/[0.03] border-y border-white/10">
-        <div className="max-w-7xl mx-auto">
-          <div className="mb-20">
-            <p className="uppercase tracking-[0.3em] text-blue-300 text-xs mb-4">
-              Strategies
-            </p>
+      {/* ECOSYSTEM */}
+      <section id="ecosystem" className="border-t border-[#D9D6CC] bg-white/50">
+        <div className="max-w-6xl mx-auto px-6 py-24">
+          <p className="font-mono text-[11px] tracking-[0.25em] text-[#3F6B5E] mb-4">ECOSYSTEM</p>
+          <h2 className="font-display font-light text-4xl leading-tight mb-4 max-w-2xl">
+            Envisioned as part of a wider group.
+          </h2>
+          <p className="text-[#3A4148] max-w-2xl mb-14 leading-relaxed">
+            AfriCene Finance is intended, over time, to sit alongside a broader
+            group of research and technology ventures under AfriCene Holdings —
+            with finance as the engine that funds the rest.
+          </p>
 
-            <h2 className="text-5xl font-light mb-6">
-              Research-driven quantitative approaches.
-            </h2>
-          </div>
-
-          <div className="grid lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
             {[
-              {
-               title: 'Statistical Arbitrage',
-               description: 
-               <p>Market-Neutral Research • Relative-Value Analysis • Quantitative Modeling • Execution Efficiency<br /><br />AfriCene Finance studies statistical arbitrage as one of the foundational disciplines of quantitative investing. Our research focuses on identifying temporary pricing dislocations between related securities, sectors, and markets through rigorous statistical analysis. By examining historical relationships, volatility behavior, and market structure dynamics, we aim to develop systematic frameworks that can identify opportunities while minimizing unnecessary directional market exposure. Our long-term objective is to build robust, research-driven models capable of adapting to evolving market conditions</p>
-              },
-              {
-               title: 'Factor Investing',
-               description:
-               <p>Value • Momentum • Quality • Risk Factors • Long-Term Asset Pricing Research<br /><br />Factor investing represents one of the most extensively researched areas in modern finance. At AfriCene Finance, we study the drivers of long-term asset returns through the lens of academic and institutional research. Our work focuses on understanding how factors such as value, momentum, quality, and risk characteristics influence investment performance across different market environments. Through continuous analysis and data-driven research, we seek to develop systematic approaches that combine multiple factors into diversified investment frameworks.</p>,
-              },
-              {
-               title: 'Systematic Macro',
-               description:
-               <p>Economic Intelligence • Policy Analysis • Liquidity Cycles • Cross-Asset Research <br /><br />Financial markets are influenced by a complex interaction of economic, political, and monetary forces. Our systematic macro research seeks to understand these relationships through a structured and quantitative framework. We study macroeconomic indicators, central bank policies, liquidity conditions, and global market developments to identify long-term trends and investment themes. By combining economic analysis with quantitative methodologies, we aim to build a deeper understanding of how large-scale market forces shape investment opportunities across asset classes.</p>,    
-              },
-              {
-               title: 'Portfolio Optimization & Risk Management',
-               description:
-               <p>Capital Preservation • Portfolio Construction • Diversification Research • Volatility Management<br /><br /> Successful investing is not solely about identifying opportunities—it is also about managing risk responsibly. AfriCene Finance places significant emphasis on portfolio construction and risk management research as core pillars of its long-term vision. Our work explores diversification techniques, volatility management, position sizing methodologies, and portfolio optimization frameworks designed to improve risk-adjusted outcomes. We believe that disciplined risk management is essential to building sustainable investment processes and maintaining investor confidence over the long term.</p>,
-              },
-            ].map((strategy) => (
-                <div
-                  key={strategy.title}
-                  className="p-10 rounded-3xl border border-white/10 backdrop-blur-xl bg-white/[0.04]"
-                >          
-                  <h3 className="text-2xl font-light mb-4">
-                    {strategy.title}
-                  </h3>
-                  <div className="text-zinc-400 text-sm leading-relaxed">
-                    {strategy.description}
-                  </div>
-                </div>
+              ["AfriCene Finance", "Asset Management"],
+              ["AfriCene Pharmaceuticals", "Drug Development"],
+              ["AfriCene MedTech", "Health Innovation"],
+              ["AfriCene Toxicology", "Chemical Research"],
+              ["AfriCene Technologies", "Applied Engineering"],
+              ["AfriCene Legal", "Legal & Compliance"],
+            ].map(([name, tag]) => (
+              <div key={name} className="border border-[#D9D6CC] rounded-2xl p-6 bg-white">
+                <h3 className="font-display text-lg font-light mb-1">{name}</h3>
+                <p className="font-mono text-xs tracking-wide text-[#5F6A72]">{tag}</p>
+              </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* CAREERS */}
-      <section id="careers" className="max-w-7xl mx-auto px-6 py-32">
-        <div className="grid lg:grid-cols-2 gap-16">
-          <div>
-            <p className="uppercase tracking-[0.3em] text-blue-300 text-xs mb-4">
-              Careers & Network
-            </p>
-
-            <h2 className="text-5xl font-light mb-8">
-              Building through talent, collaboration, and research.
-            </h2>
-          </div>
-
-          <div className="space-y-6 text-zinc-300 text-lg leading-relaxed">
-            <p>
-              AfriCene recruits through networking, collaborative research,
-              technical projects, and long-term partnerships.
-            </p>
-
-            <p>
-              The company seeks individuals interested in quantitative finance,
-              artificial intelligence, software engineering, market research,
-              economics, healthcare innovation, and institutional strategy.
-            </p>
-
-            <p>
-              As the organization evolves, AfriCene aims to create a global
-              ecosystem of researchers, analysts, engineers, and innovators.
-            </p>
           </div>
         </div>
       </section>
 
       {/* CONTACT */}
-      <section id="contact" className="py-32 px-6 border-t border-white/10">
-        <div className="max-w-5xl mx-auto text-center">
-          <p className="uppercase tracking-[0.3em] text-blue-300 text-xs mb-4">
-            Contact
-          </p>
+      <section id="contact" className="max-w-6xl mx-auto px-6 py-28 text-center">
+        <p className="font-mono text-[11px] tracking-[0.25em] text-[#3F6B5E] mb-4">CONTACT</p>
+        <h2 className="font-display font-light text-4xl leading-tight mb-6 max-w-xl mx-auto">
+          Open to research collaboration and future partnerships.
+        </h2>
+        <p className="text-[#3A4148] max-w-xl mx-auto mb-12 leading-relaxed">
+          AfriCene Finance is not yet accepting client capital. We welcome
+          conversations with researchers, academics, and future partners who share
+          this direction.
+        </p>
 
-          <h2 className="text-5xl font-light mb-8">
-            Building institutional intelligence.
-          </h2>
-
-          <p className="text-zinc-400 text-lg mb-10 max-w-2xl mx-auto">
-            AfriCene Finance is currently in development and open to strategic
-            networking opportunities, research collaborations, and future
-            partnerships.
-          </p>
-
-          <div className="backdrop-blur-xl bg-white/[0.04] border border-white/10 rounded-[2rem] p-10 inline-block">
-            <p className="text-zinc-400 mb-2">Email</p>
-            <h3 className="text-2xl">mltale007@myuct.ac.za</h3>
-
-            <div className="mt-8 flex justify-center gap-4 flex-wrap">
-              <div className="px-6 py-3 rounded-2xl bg-white/5 border border-white/10">
-                +27 79 777 5836
-              </div>
-
-              <div className="px-6 py-3 rounded-2xl bg-white/5 border border-white/10">
-                github.com/AlexDeFlex
-              </div>
-            </div>
+        <div className="inline-flex flex-col sm:flex-row gap-4 text-left">
+          <a href="mailto:malatsialex@gmail.com" className="flex items-center gap-3 border border-[#D9D6CC] rounded-full px-6 py-3.5 bg-white hover:border-[#16273D]/40 transition">
+            <Mail className="w-4 h-4 text-[#3F6B5E]" strokeWidth={1.5} />
+            <span className="text-sm">malatsialex@gmail.com</span>
+          </a>
+          <a href="tel:+27797775836" className="flex items-center gap-3 border border-[#D9D6CC] rounded-full px-6 py-3.5 bg-white hover:border-[#16273D]/40 transition">
+            <Phone className="w-4 h-4 text-[#3F6B5E]" strokeWidth={1.5} />
+            <span className="text-sm">+27 79 777 5836</span>
+          </a>
+          <div className="flex items-center gap-3 border border-[#D9D6CC] rounded-full px-6 py-3.5 bg-white">
+            <MapPin className="w-4 h-4 text-[#3F6B5E]" strokeWidth={1.5} />
+            <span className="text-sm">Pretoria, South Africa</span>
           </div>
         </div>
       </section>
+
+      {/* FOOTER */}
+      <footer className="border-t border-[#D9D6CC] py-10">
+        <div className="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-4">
+          <p className="font-display text-sm">AfriCene Finance</p>
+          <p className="text-xs text-[#5F6A72]">
+            AfriCene Finance is in development and is not currently a licensed financial services provider.
+          </p>
+        </div>
+      </footer>
     </div>
   );
 }
