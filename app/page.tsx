@@ -1,15 +1,5 @@
-/** @jsxRuntime classic */
-/** @jsx React.createElement */
 import React from "react";
 import { FlaskConical, GraduationCap, ShieldCheck, Rocket, Dna, BookOpen, Mail, Phone, MapPin } from "lucide-react";
-
-declare global {
-  namespace JSX {
-    interface IntrinsicElements {
-      [elementName: string]: any;
-    }
-  }
-}
 
 export default function AfriCeneFinance() {
   return (
