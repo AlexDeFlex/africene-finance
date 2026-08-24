@@ -28,7 +28,7 @@ export default function AfriCeneFinance() {
       </header>
 
       {/* HERO */}
-      <section className="max-w-6xl mx-auto px-6 pt-20 pb-24 grid lg:grid-cols-[1.1fr,0.9fr] gap-16 items-center">
+      <section className="max-w-6xl mx-auto px-6 pt-20 pb-24 grid lg:grid-cols-[1.4fr,0.6fr] gap-16 items-center">
         <div>
           <p className="font-mono text-[11px] tracking-[0.25em] text-[#3F6B5E] mb-6">
             IN DEVELOPMENT — PRETORIA, SOUTH AFRICA
@@ -36,7 +36,7 @@ export default function AfriCeneFinance() {
           <h1 className="font-display font-light text-5xl md:text-6xl leading-[1.08] tracking-tight mb-8">
             Capital, built to fund the science that changes lives.
           </h1>
-          <p className="text-[#3A4148] text-lg leading-relaxed max-w-xl mb-10">
+          <p className="text-[#3A4148] text-lg leading-relaxed mb-10">
             AfriCene Finance is an emerging asset management firm, currently in its
             research and foundation phase. We exist to build long-term investment
             discipline toward one purpose: directing capital into medical science,
@@ -52,27 +52,30 @@ export default function AfriCeneFinance() {
           </div>
         </div>
 
-        {/* Abstract molecule / lattice motif — hero visual */}
+        {/* Abstract candlestick chart motif — hero visual */}
         <div className="relative aspect-square max-w-md mx-auto w-full">
           <svg viewBox="0 0 400 400" className="w-full h-full">
-            <g stroke="#16273D" strokeOpacity="0.18" strokeWidth="1">
-              <line x1="0" y1="80" x2="400" y2="80" />
+            <g stroke="#16273D" strokeOpacity="0.15" strokeWidth="1">
+              <line x1="0" y1="100" x2="400" y2="100" />
               <line x1="0" y1="200" x2="400" y2="200" />
-              <line x1="0" y1="320" x2="400" y2="320" />
-              <line x1="100" y1="0" x2="100" y2="400" />
-              <line x1="300" y1="0" x2="300" y2="400" />
+              <line x1="0" y1="300" x2="400" y2="300" />
             </g>
-            <g stroke="#3F6B5E" strokeWidth="1.5" fill="none" strokeOpacity="0.9">
-              <line x1="100" y1="80" x2="230" y2="150" />
-              <line x1="230" y1="150" x2="180" y2="290" />
-              <line x1="230" y1="150" x2="320" y2="200" />
-              <line x1="180" y1="290" x2="300" y2="320" />
-            </g>
-            <circle cx="100" cy="80" r="7" fill="#16273D" />
-            <circle cx="230" cy="150" r="10" fill="#3F6B5E" />
-            <circle cx="180" cy="290" r="7" fill="#16273D" />
-            <circle cx="320" cy="200" r="6" fill="#9C7A3C" />
-            <circle cx="300" cy="320" r="7" fill="#16273D" />
+            <line x1="40" y1="300" x2="350" y2="55" stroke="#3F6B5E" strokeWidth="1.5" strokeDasharray="4 5" strokeOpacity="0.6" />
+            {[
+              { x: 50, wickTop: 220, wickBot: 280, bodyTop: 240, bodyBot: 270, fill: "#8A9199" },
+              { x: 90, wickTop: 190, wickBot: 260, bodyTop: 210, bodyBot: 250, fill: "#8A9199" },
+              { x: 130, wickTop: 160, wickBot: 230, bodyTop: 180, bodyBot: 215, fill: "#3A4148" },
+              { x: 170, wickTop: 130, wickBot: 200, bodyTop: 150, bodyBot: 190, fill: "#3A4148" },
+              { x: 210, wickTop: 150, wickBot: 210, bodyTop: 165, bodyBot: 195, fill: "#8A9199" },
+              { x: 250, wickTop: 100, wickBot: 170, bodyTop: 115, bodyBot: 150, fill: "#3A4148" },
+              { x: 290, wickTop: 70, wickBot: 140, bodyTop: 85, bodyBot: 120, fill: "#5F6A72" },
+              { x: 330, wickTop: 40, wickBot: 110, bodyTop: 55, bodyBot: 90, fill: "#9C7A3C" },
+            ].map((c) => (
+              <g key={c.x}>
+                <line x1={c.x} y1={c.wickTop} x2={c.x} y2={c.wickBot} stroke={c.fill} strokeWidth="1.5" />
+                <rect x={c.x - 9} y={c.bodyTop} width="18" height={c.bodyBot - c.bodyTop} fill={c.fill} rx="1.5" />
+              </g>
+            ))}
           </svg>
         </div>
       </section>
@@ -151,10 +154,10 @@ export default function AfriCeneFinance() {
                 body: "The discipline we are building now — market research, data analysis, and formal study, ahead of any capital deployment.",
               },
             ].map((item) => (
-              <div key={item.title} className="border border-white/15 rounded-2xl p-8 bg-white/[0.03]">
+              <div key={item.title} className="border border-[#3A4756] rounded-2xl p-8 bg-[#1A2C44]">
                 <item.icon className="w-6 h-6 text-[#9FD4C2] mb-6" strokeWidth={1.5} />
                 <h3 className="font-display text-xl font-light mb-3">{item.title}</h3>
-                <p className="text-white/70 text-sm leading-relaxed">{item.body}</p>
+                <p className="text-[#B9BEC5] text-sm leading-relaxed">{item.body}</p>
               </div>
             ))}
           </div>
@@ -163,7 +166,7 @@ export default function AfriCeneFinance() {
 
       {/* JOURNEY — signature timeline */}
       <section id="journey" className="max-w-6xl mx-auto px-6 py-24">
-        <p className="font-mono text-[11px] tracking-[0.25em] text-[#3F6B5E] mb-4">JOURNEY</p>
+        <p className="font-mono text-[11px] tracking-[0.15em] text-[#3F6B5E] mb-4">JOURNEY</p>
         <h2 className="font-display font-light text-4xl leading-tight mb-16 max-w-2xl">
           The path from research to a licensed fund.
         </h2>
