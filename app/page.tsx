@@ -228,8 +228,6 @@ export default function AfriCeneFinance() {
               ["AfriCene Pharmaceuticals", "Drug Development"],
               ["AfriCene MedTech", "Health Innovation"],
               ["AfriCene Toxicology", "Chemical Research"],
-              ["AfriCene Technologies", "Applied Engineering"],
-              ["AfriCene Legal", "Legal & Compliance"],
             ].map(([name, tag]) => (
               <div key={name} className="border border-[#D9D6CC] rounded-2xl p-6 bg-white">
                 <h3 className="font-display text-lg font-light mb-1">{name}</h3>
